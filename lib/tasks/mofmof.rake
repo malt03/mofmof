@@ -3,12 +3,12 @@ require 'eventmachine'
 namespace :mofmof do
   desc 'say mofmof'
   task :say do
-    puts "もふもふ。"
+    puts Mofmof.configure.mof * 2 + '。'
   end
 
   desc 'say mofmofmofmofmof'
   task :saaaaaaay do
-    puts "もふもふもふもふもふもふもふもふもふもふもふもふもふもふもふもふもふもふ。"
+    puts Mofmof.configure.mof * 10 + '。'
   end
 
   desc 'echo server'
