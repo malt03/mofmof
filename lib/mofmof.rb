@@ -1,4 +1,5 @@
 require "mofmof/version"
+require "mofmof/configuration"
 
 module Mofmof
   class << self

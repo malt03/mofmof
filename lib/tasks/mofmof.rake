@@ -1,3 +1,4 @@
+require 'Mofmof'
 require 'eventmachine'
 
 namespace :mofmof do
