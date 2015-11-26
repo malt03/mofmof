@@ -3,17 +3,17 @@ require 'eventmachine'
 
 namespace :mofmof do
   desc 'say mofmof'
-  task :say do
+  task say: :environment do
     puts Mofmof.configuration.mof * 2 + '。'
   end
 
   desc 'say mofmofmofmofmof'
-  task :saaaaaaay do
-    puts Mofmof.configure.mof * 10 + '。'
+  task saaaaaaay: :environment do
+    puts Mofmof.configuration.mof * 10 + '。'
   end
 
   desc 'echo server'
-  task :echo do
+  task echo: :environment do
     EM.run do
       EM.start_server("0.0.0.0", 10000, Echo)
     end
