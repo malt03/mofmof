@@ -4,7 +4,7 @@ require 'eventmachine'
 namespace :mofmof do
   desc 'say mofmof'
   task :say do
-    puts Mofmof.configure.mof * 2 + '。'
+    puts Mofmof.configuration.mof * 2 + '。'
   end
 
   desc 'say mofmofmofmofmof'
